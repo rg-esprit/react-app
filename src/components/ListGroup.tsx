@@ -21,7 +21,7 @@ function ListGroup(props: Props) {
             }
             key={item}
             onClick={() => {
-              setSelectedIndex(index);
+              setSelectedIndex(selectedIndex === index ? -1 : index);
               props.onSelectItem(item);
             }}
           >
